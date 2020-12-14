@@ -64,7 +64,9 @@ export default class SettingScreen extends Component{
   render(){
     return(
       <View style={styles.container} >
+        <View style={{flex:1}}>
         <MyHeader title="Settings" navigation={this.props.navigation}/>
+        </View>
         <View style={styles.formContainer}>
             <TextInput
               style={styles.formTextInput}
@@ -127,8 +129,6 @@ export default class SettingScreen extends Component{
 const styles = StyleSheet.create({
   container : {
     flex:1,
-    alignItems: 'center',
-    justifyContent: 'center'
   },
   formContainer:{
     flex:1,
